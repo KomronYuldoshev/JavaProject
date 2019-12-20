@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.LibrarianController">
+   <children>
+      <ImageView fitHeight="669.0" fitWidth="920.0" layoutX="-12.0" layoutY="-9.0">
+         <image>
+            <Image url="@../image/librarian/librarian_menu_main.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="175.0" layoutY="321.0" prefHeight="46.0" prefWidth="594.0" spacing="200.0">
+         <children>
+            <Button fx:id="students" mnemonicParsing="false" onAction="#studentHandler" prefHeight="46.0" prefWidth="195.0" style="-fx-background-color: #669999;" text="STUDENTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="books" mnemonicParsing="false" onAction="#bookHandler" prefHeight="50.0" prefWidth="197.0" style="-fx-background-color: #669999;" text="BOOKS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="172.0" layoutY="582.0" prefHeight="46.0" prefWidth="668.0" spacing="100.0">
+         <children>
+            <Button fx:id="viewFilter" mnemonicParsing="false" onAction="#viewHandler" prefHeight="46.0" prefWidth="198.0" style="-fx-background-color: #669999;" text="VIEW AND FILTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logoutHandler" prefHeight="50.0" prefWidth="197.0" style="-fx-background-color: #669999;" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="97.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>

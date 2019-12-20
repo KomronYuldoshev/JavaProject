@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.StudentControl">
+    <children>
+        <ImageView id="issue" fitHeight="669.0" fitWidth="920.0" layoutX="-12.0" layoutY="-9.0">
+            <image>
+                <Image url="@../image/student/book_management.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="profileBack" layoutX="67.0" layoutY="568.0" mnemonicParsing="false" onAction="#profileBackHandler" prefHeight="46.0" prefWidth="143.0" style="-fx-background-color: #cc3333;" text="BACK" textFill="WHITE" />
+        <Button fx:id="studentProfile" layoutX="71.0" layoutY="302.0" mnemonicParsing="false" onAction="#studentPHandler" prefHeight="46.0" prefWidth="208.0" style="-fx-background-color: #669999;" text="PROFILE" textFill="WHITE">
+
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="74.0" layoutY="570.0">
+            <image>
+                <Image url="@../image/icons/back.png" />
+            </image>
+        </ImageView>
+        <TableView layoutX="70.0" layoutY="270.0" prefHeight="266.0" prefWidth="742.0">
+            <columns>
+                <TableColumn prefWidth="270.99998474121094" text="borrowed books" />
+                <TableColumn prefWidth="223.66665649414062" text="date of issued" />
+                <TableColumn prefWidth="223.66665649414062" text="returned date" />
+            </columns>
+        </TableView>
+        <HBox layoutX="68.0" layoutY="162.0" prefHeight="72.0" prefWidth="765.0" spacing="20.0">
+            <children>
+                <TextField fx:id="studentId" prefHeight="62.0" prefWidth="237.0" promptText="id of student">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="studentEmail" prefHeight="62.0" prefWidth="228.0" promptText="email of student">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="studentFullName" prefHeight="62.0" prefWidth="234.0" promptText="full name">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

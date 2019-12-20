@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.StudentControl">
+   <children>
+      <ImageView id="issue" fitHeight="669.0" fitWidth="920.0" layoutX="-12.0" layoutY="-9.0">
+         <image>
+            <Image url="@../image/student/book_management.jpg" />
+         </image>
+      </ImageView>
+      <Button id="main.xmpl" fx:id="studentStatusBack" layoutX="67.0" layoutY="568.0" mnemonicParsing="false" onAction="#studentStatusBackHandler" prefHeight="46.0" prefWidth="143.0" style="-fx-background-color: #cc3333;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="74.0" layoutY="570.0">
+         <image>
+            <Image url="@../image/icons/back.png" />
+         </image>
+      </ImageView>
+      <RadioButton layoutX="119.0" layoutY="195.0" mnemonicParsing="false" selected="true" text="active" textFill="#26b562">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="90.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Status:" wrappingWidth="190.310546875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="119.0" layoutY="248.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="132.0" text="blocked" textFill="#cd0f0f">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="512.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadlines of returning books:" wrappingWidth="324.9772033691406">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView layoutX="509.0" layoutY="207.0" prefHeight="345.0" prefWidth="345.0">
+        <columns>
+          <TableColumn prefWidth="167.66668701171875" text="title of book" />
+          <TableColumn minWidth="0.0" prefWidth="161.33331298828125" text="date of expire" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

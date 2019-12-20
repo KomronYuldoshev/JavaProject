@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.LoginControl">
+    <children>
+        <ImageView fitHeight="450.0" fitWidth="450.0">
+            <image>
+                <Image url="@image/login/login_page.jpg" />
+            </image>
+        </ImageView>
+        <PasswordField fx:id="passwordField" layoutX="118.0" layoutY="253.0" prefHeight="38.0" prefWidth="264.0" promptText="password" style="-fx-background-radius: 10px; -fx-border-radius: 10px;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </PasswordField>
+        <TextField fx:id="usernameField" layoutX="118.0" layoutY="178.0" prefHeight="38.0" prefWidth="264.0" promptText="username" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button fx:id="login" layoutX="118.0" layoutY="332.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #669966; -fx-border-color: #666666; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="login" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

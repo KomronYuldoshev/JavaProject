@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AdminController">
+   <children>
+      <ImageView fitHeight="669.0" fitWidth="918.0" layoutX="-8.0" layoutY="-10.0">
+         <image>
+            <Image url="@../image/admin/lib_registration.jpg" />
+         </image>
+      </ImageView>
+      <TableView layoutX="35.0" layoutY="161.0" prefHeight="403.0" prefWidth="829.0">
+        <columns>
+          <TableColumn prefWidth="236.66665649414062" text="name" />
+          <TableColumn prefWidth="213.33334350585938" text="id" />
+            <TableColumn prefWidth="200.0" text="password" />
+            <TableColumn prefWidth="200.0" text="email" />
+        </columns>
+      </TableView>
+      <HBox layoutX="164.0" layoutY="94.0" prefHeight="64.0" prefWidth="741.0" spacing="15.0">
+         <children>
+            <Button fx:id="librarianAdd" mnemonicParsing="false" onAction="#librarianAddHandler" prefHeight="57.0" prefWidth="105.0" style="-fx-background-color: #67999a;" text="add" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="librarianEdit" mnemonicParsing="false" onAction="#librarianEditHandler" prefHeight="57.0" prefWidth="105.0" style="-fx-background-color: #67999a;" text="edit" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="librarianDelete" mnemonicParsing="false" onAction="#librarianDeleteHandler" prefHeight="57.0" prefWidth="105.0" style="-fx-background-color: #c6503d;" text="delete" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="librarianBackMain" layoutX="42.0" layoutY="585.0" mnemonicParsing="false" onAction="#librarianBackMainHandler" prefHeight="14.0" prefWidth="105.0" style="-fx-background-color: #c6503d;" text="back" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
